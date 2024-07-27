@@ -1,15 +1,20 @@
 {
   "name": "prog",
   "version": "1.0.0",
-  "description": "STACK UTILIZADA: Node.js com javascript.",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"nodemon --env-file=.env ./src/app.js "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12"
   }
 }
