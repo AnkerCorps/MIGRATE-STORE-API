@@ -1,5 +1,4 @@
-import { ServerSetup } from "./config/server-config.js";
+import { Server } from "./server/server.js";
+const server = new Server()
 
-const setup =  new ServerSetup()
-
-setup.boot()
+server.start()
