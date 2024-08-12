@@ -40,7 +40,7 @@ export class ServerSetup {
 
 
     server.listen(port,()=>{
-      console.log('servidor rodando na porta ',port)
+      console.log(`servidor rodando na porta http://localhost:${port}/`)
     })
   }
 }

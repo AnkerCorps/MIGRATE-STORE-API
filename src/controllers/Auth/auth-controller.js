@@ -12,17 +12,27 @@ export class AuthController{
       this.service = service
       this.validator = validator
     }
-      
-    async registerUser(body){
-     
-      
-      try {
-        await this.service.signUser(body)
-      } catch (error) {
-        console.log(error.data)
-      }
 
+     async registerUser(body) {
+        try {
+            await this.service.signUser(body);
+            console.log("Usuário registrado com sucesso");
+        } catch (error) {
+            console.log("Erro ao registrar usuário:", error.message);
+        }
     }
+    
+    
+    async registerUser(body) {
+      try {
+          await this.service.signUser(body);
+          console.log("Usuário registrado com sucesso");
+      } catch (error) {
+          console.log("Erro ao registrar usuário:", error.message);
+      }
+  }
+
+  
   
   }
   

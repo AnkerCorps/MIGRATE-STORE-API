@@ -1,6 +1,6 @@
 // precisso tira esse negocio daqui
-// colocar em outra pasta 
-class CPFUtils {
+// criar campo de validação do usuario
+export class CPFUtils {
     static validarCPF(cpf) {
 
         cpf = cpf.replace(/[^\d]+/g, '');
