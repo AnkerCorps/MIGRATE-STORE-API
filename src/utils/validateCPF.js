@@ -2,7 +2,8 @@
 // criar campo de validação do usuario
 export class CPFUtils {
     static validarCPF(cpf) {
-
+        console.log(`cpf saindo como ${cpf}`);
+        
         cpf = cpf.replace(/[^\d]+/g, '');
         if (cpf.length !== 11) return false;
         if (/^(\d)\1+$/.test(cpf)) return false;
